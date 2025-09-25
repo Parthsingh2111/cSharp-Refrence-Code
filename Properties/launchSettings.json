@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5270",
+      "environmentVariables": {
+        "PAYGLOCAL_MERCHANT_ID": "YOUR_MERCHANT_ID",
+        "PAYGLOCAL_PUBLIC_KEY_ID": "YOUR_PUBLIC_KEY_ID",
+        "PAYGLOCAL_PRIVATE_KEY_ID": "YOUR_PRIVATE_KEY_ID",
+        "PAYGLOCAL_PUBLIC_KEY": "keys/payglocal_public_key.pem",
+        "PAYGLOCAL_PRIVATE_KEY": "keys/payglocal_private_key.pem"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7139;http://localhost:5270",
+      "environmentVariables": {
+        "PAYGLOCAL_MERCHANT_ID": "YOUR_MERCHANT_ID",
+        "PAYGLOCAL_PUBLIC_KEY_ID": "YOUR_PUBLIC_KEY_ID",
+        "PAYGLOCAL_PRIVATE_KEY_ID": "YOUR_PRIVATE_KEY_ID",
+        "PAYGLOCAL_PUBLIC_KEY": "keys/payglocal_public_key.pem",
+        "PAYGLOCAL_PRIVATE_KEY": "keys/payglocal_private_key.pem"
+      }
+    }
+  }
+}

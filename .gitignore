@@ -1,0 +1,20 @@
+# Build outputs
+bin/
+obj/
+
+# User-specific and OS files
+*.user
+*.suo
+*.swp
+.DS_Store
+
+# Rider/VS Code
+.idea/
+.vscode/
+
+# Keys directory (keep folder only)
+keys/*
+!keys/.gitkeep
+
+# Publish output
+publish/ 
