@@ -1,8 +1,8 @@
-# PayGlocal Server-to-Server Reference (C# / .NET)
+# PayGlocal Server-to-Server Reference (C# / .NET) 
 
 This repository contains minimal reference code to initiate a PayGlocal payment server-to-server.
 
-Important: This is reference code
+Important: This is reference code and uses the PayGlocal UAT (testing environment) endpoint. Once testing is complete, the endpoint should be updated for production.
 
 ## What this does
 - Exposes a minimal API endpoint: `POST /pg/initiate`
@@ -71,7 +71,9 @@ curl -sS -X POST http://localhost:5270/pg/initiate \
   }'
 ```
 
-Example with card (only if you are PCI compliant):
+Example with card (applicable only if you are PCI compliant): For the paydirect method, the endpoint used will be:
+https://api.uat.payglocal.in/gl/v1/payments/initiate
+
 ```bash
 curl -sS -X POST http://localhost:5270/pg/initiate \
   -H 'Content-Type: application/json' \
